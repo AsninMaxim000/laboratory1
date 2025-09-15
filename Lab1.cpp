@@ -5,18 +5,18 @@
 using namespace std;
 
 // Функции для треугольника
-bool is_isosceles_triangle(double a, double b, double c) {
-    return (a == b || b == c || c == a);
+bool is_isosceles_triangle(double d, double b, double c) {
+    return (d == b || b == c || c == d);
 }
-double triangle_semiperimeter(double a, double b, double c) {
-    return (a + b + c) / 2.0;
+double triangle_semiperimeter(double d, double b, double c) {
+    return (d + b + c) / 2.0;
 }
-double heron_formula(double a, double b, double c) {
-    double s = triangle_semiperimeter(a, b, c);
-    return sqrt(s * (s - a) * (s - b) * (s - c));
+double heron_formula(double d, double b, double c) {
+    double s = triangle_semiperimeter(d, b, c);
+    return sqrt(s * (s - d) * (s - b) * (s - c));
 }
-double triangle_perimeter(double a, double b, double c) {
-    return a + b + c;
+double triangle_perimeter(double d, double b, double c) {
+    return d + b + c;
 }
 
 // Преобразование строки в верхний регистр
